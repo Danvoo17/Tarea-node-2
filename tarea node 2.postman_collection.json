@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "36c083d3-694c-4283-8f8f-8cb7ebca8fe9",
+		"name": "Modulo 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39070824"
+	},
+	"item": [
+		{
+			"name": "Tarea node 2",
+			"item": [
+				{
+					"name": "getContacto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5100/api/contactos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"contactos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createContacto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"messi\",\r\n  \"telefono\": \"899-124-4567\",\r\n  \"correo\": \"messi@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/contactos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"contactos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyContacto",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"cristiano\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/contactos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"contactos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteContacto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5100/api/contactos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"contactos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
